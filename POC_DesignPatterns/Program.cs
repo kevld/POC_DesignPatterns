@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using POC_DesignPatterns.AbstractFactory;
+using POC_DesignPatterns.Builder;
 using POC_DesignPatterns.FactoryMethod;
 using POC_DesignPatterns.NS_Singleton;
 
@@ -25,5 +26,11 @@ Console.WriteLine("Factory abstract :");
 
 var avl = new AbstractFactoryLauncher();
 avl.Launch();
+
+Console.WriteLine("=======================================");
+Console.WriteLine("");
+Console.WriteLine("Builder :");
+var bl = new BuilderLauncher();
+bl.Launch();
 
 Console.ReadKey();
