@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using POC_DesignPatterns.AbstractFactory;
 using POC_DesignPatterns.FactoryMethod;
 using POC_DesignPatterns.NS_Singleton;
 
@@ -17,5 +18,12 @@ Console.WriteLine("Factory method :");
 
 var fml = new FactoryMethodLauncher();
 fml.Launch();
+
+Console.WriteLine("=======================================");
+Console.WriteLine("");
+Console.WriteLine("Factory abstract :");
+
+var avl = new AbstractFactoryLauncher();
+avl.Launch();
 
 Console.ReadKey();
