@@ -3,6 +3,7 @@
 using POC_DesignPatterns.AbstractFactory;
 using POC_DesignPatterns.Adapter;
 using POC_DesignPatterns.Builder;
+using POC_DesignPatterns.Decorator;
 using POC_DesignPatterns.FactoryMethod;
 using POC_DesignPatterns.NS_Singleton;
 using POC_DesignPatterns.Prototype;
@@ -46,5 +47,12 @@ Console.WriteLine("");
 Console.WriteLine("Adapter :");
 var al = new AdapterLauncher();
 al.Launch();
+
+
+Console.WriteLine("=======================================");
+Console.WriteLine("");
+Console.WriteLine("Decorator :");
+var dl = new DecoratorLauncher();
+dl.Launch();
 
 Console.ReadKey();
