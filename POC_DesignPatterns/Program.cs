@@ -4,6 +4,7 @@ using POC_DesignPatterns.AbstractFactory;
 using POC_DesignPatterns.Builder;
 using POC_DesignPatterns.FactoryMethod;
 using POC_DesignPatterns.NS_Singleton;
+using POC_DesignPatterns.Prototype;
 
 Console.WriteLine("Singleton :");
 
@@ -32,5 +33,12 @@ Console.WriteLine("");
 Console.WriteLine("Builder :");
 var bl = new BuilderLauncher();
 bl.Launch();
+
+Console.WriteLine("=======================================");
+Console.WriteLine("");
+Console.WriteLine("Prototype :");
+var pl = new PrototypeLauncher();
+pl.Launch();
+
 
 Console.ReadKey();
