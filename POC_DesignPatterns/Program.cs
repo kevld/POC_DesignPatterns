@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using POC_DesignPatterns.AbstractFactory;
+using POC_DesignPatterns.Adapter;
 using POC_DesignPatterns.Builder;
 using POC_DesignPatterns.FactoryMethod;
 using POC_DesignPatterns.NS_Singleton;
@@ -40,5 +41,10 @@ Console.WriteLine("Prototype :");
 var pl = new PrototypeLauncher();
 pl.Launch();
 
+Console.WriteLine("=======================================");
+Console.WriteLine("");
+Console.WriteLine("Adapter :");
+var al = new AdapterLauncher();
+al.Launch();
 
 Console.ReadKey();

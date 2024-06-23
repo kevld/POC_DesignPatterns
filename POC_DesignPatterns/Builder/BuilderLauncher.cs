@@ -1,8 +1,10 @@
+using POC_DesignPatterns.Common;
+
 namespace POC_DesignPatterns.Builder;
 
-public class BuilderLauncher
+public class BuilderLauncher : Launcher
 {
-    public void Launch()
+    public override void Launch()
     {
         var director = new ShapeDirector();
         var builder = new ShapeBuilder();

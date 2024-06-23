@@ -1,8 +1,10 @@
+using POC_DesignPatterns.Common;
+
 namespace POC_DesignPatterns.AbstractFactory;
 
-public class AbstractFactoryLauncher
+public class AbstractFactoryLauncher : Launcher
 {
-    public void Launch()
+    public override void Launch()
     {
         Console.WriteLine("Launching Green Circle Factory");
         CreateInstance(new GreenCircleFactory());

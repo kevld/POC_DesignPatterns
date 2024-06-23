@@ -1,8 +1,10 @@
+using POC_DesignPatterns.Common;
+
 namespace POC_DesignPatterns.FactoryMethod;
 
-public class FactoryMethodLauncher
+public class FactoryMethodLauncher : Launcher
 {
-    public void Launch()
+    public override void Launch()
     {
         Console.WriteLine("Launching Green");
         CreateInstance(new GreenCreator());

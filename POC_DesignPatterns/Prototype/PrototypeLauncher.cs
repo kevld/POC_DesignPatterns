@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POC_DesignPatterns.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace POC_DesignPatterns.Prototype
 {
-    public class PrototypeLauncher
+    public class PrototypeLauncher : Launcher
     {
-        public void Launch() 
+        public override void Launch() 
         {
             var p1 = new Color(Guid.NewGuid(), "Green");
             var p2 = (Color) p1.Clone() ;
